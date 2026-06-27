@@ -1,0 +1,26 @@
+{
+  "name": "agri-llm-backend",
+  "version": "1.0.0",
+  "description": "Agriculture LLM Backend — turns YOLO disease detections into structured agricultural advice",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": ["agriculture", "llm", "plant-disease"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/test/**/*.test.js"]
+  }
+}
