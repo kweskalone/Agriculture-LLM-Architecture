@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: agriculture-llm-backend
+    runtime: node
+    rootDir: agri-llm-backend
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: API_KEY
+        sync: false
+      - key: AGRILLM_URL
+        sync: false
+      - key: LLM_PROVIDER
+        value: agrillm
+      - key: LLM_TIMEOUT_MS
+        value: "60000"
+      - key: CACHE_TTL
+        value: "604800"
+      - key: CACHE_FILE
+        value: ./cache.json
