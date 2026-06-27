@@ -10,7 +10,7 @@ YOLO backend ──▶ Agriculture LLM Backend ──▶ Main Router
 ## Base URL
 
 - **Local:** `http://localhost:3000`
-- **Production (Render):** `https://<your-service>.onrender.com`
+- **Production (Render):** `https://agriculture-llm-backend.onrender.com`
 
 ## Authentication
 
